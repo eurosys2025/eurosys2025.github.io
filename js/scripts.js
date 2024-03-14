@@ -48,7 +48,8 @@ $(document).ready(function(){
         'img/img05.jpg',
         'img/img06.jpg',
         'img/img07.jpg',
-        'img/img08.jpg'];
+        'img/img08.jpg',
+		'img/img09.jpg'];
 
     var randomNumber = Math.floor(Math.random() * images.length);
     var bgImg = 'url(' + images[randomNumber] + ')';
