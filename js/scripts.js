@@ -45,7 +45,10 @@ $(document).ready(function(){
         'img/img02.jpg',
         'img/img03.jpg',
         'img/img04.jpg',
-        'img/img05.jpg'];
+        'img/img05.jpg',
+        'img/img06.jpg',
+        'img/img07.jpg',
+        'img/img08.jpg'];
 
     var randomNumber = Math.floor(Math.random() * images.length);
     var bgImg = 'url(' + images[randomNumber] + ')';
