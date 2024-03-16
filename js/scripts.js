@@ -50,7 +50,12 @@ $(document).ready(function(){
         'img/img07.jpg',
         'img/img08.jpg',
 		'img/img09.jpg',
-		'img/img10.jpg'];
+		'img/img10.jpg'
+		'img/img11.png',
+		'img/img12.jpeg',
+		'img/img13.jpeg',
+		'img14.jpeg'
+];
 
     var randomNumber = Math.floor(Math.random() * images.length);
     var bgImg = 'url(' + images[randomNumber] + ')';
