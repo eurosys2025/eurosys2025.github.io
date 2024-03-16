@@ -54,7 +54,7 @@ $(document).ready(function(){
 		'img/img11.png',
 		'img/img12.jpeg',
 		'img/img13.jpeg',
-		'img14.jpeg'
+		'img/img14.jpeg'
 ];
 
     var randomNumber = Math.floor(Math.random() * images.length);
