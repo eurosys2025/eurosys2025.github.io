@@ -50,7 +50,8 @@ $(document).ready(function(){
         'img/img07.jpg',
         'img/img08.jpg',
 		'img/img09.jpg',
-		'img/img10.jpg'
+		'img/img10.jpg',
+		'img/img11.png',
 		'img/img12.jpg',
 		'img/img13.jpg',
 		'img/img14.jpg'
