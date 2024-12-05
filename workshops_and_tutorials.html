@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>EuroSys 2025</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        svg:not(:root).svg-inline--fa {
+            overflow: visible
+        }
+
+        .svg-inline--fa {
+            display: inline-block;
+            font-size: inherit;
+            height: 1em;
+            overflow: visible;
+            vertical-align: -.125em
+        }
+
+        .svg-inline--fa.fa-lg {
+            vertical-align: -.225em
+        }
+
+        .svg-inline--fa.fa-w-1 {
+            width: .0625em
+        }
+
+        .svg-inline--fa.fa-w-2 {
+            width: .125em
+        }
+
+        .svg-inline--fa.fa-w-3 {
+            width: .1875em
+        }
+
+        .svg-inline--fa.fa-w-4 {
+            width: .25em
+        }
+
+        .svg-inline--fa.fa-w-5 {
+            width: .3125em
+        }
+
+        .svg-inline--fa.fa-w-6 {
+            width: .375em
+        }
+
+        .svg-inline--fa.fa-w-7 {
+            width: .4375em
+        }
+
+        .svg-inline--fa.fa-w-8 {
+            width: .5em
+        }
+
+        .svg-inline--fa.fa-w-9 {
+            width: .5625em
+        }
+
+        .svg-inline--fa.fa-w-10 {
+            width: .625em
+        }
+
+        .svg-inline--fa.fa-w-11 {
+            width: .6875em
+        }
+
+        .svg-inline--fa.fa-w-12 {
+            width: .75em
+        }
+
+        .svg-inline--fa.fa-w-13 {
+            width: .8125em
+        }
+
+        .svg-inline--fa.fa-w-14 {
+            width: .875em
+        }
+
+        .svg-inline--fa.fa-w-15 {
+            width: .9375em
+        }
+
+        .svg-inline--fa.fa-w-16 {
+            width: 1em
+        }
+
+        .svg-inline--fa.fa-w-17 {
+            width: 1.0625em
+        }
+
+        .svg-inline--fa.fa-w-18 {
+            width: 1.125em
+        }
+
+        .svg-inline--fa.fa-w-19 {
+            width: 1.1875em
+        }
+
+        .svg-inline--fa.fa-w-20 {
+            width: 1.25em
+        }
+
+        .svg-inline--fa.fa-pull-left {
+            margin-right: .3em;
+            width: auto
+        }
+
+        .svg-inline--fa.fa-pull-right {
+            margin-left: .3em;
+            width: auto
+        }
+
+        .svg-inline--fa.fa-border {
+            height: 1.5em
+        }
+
+        .svg-inline--fa.fa-li {
+            width: 2em
+        }
+
+        .svg-inline--fa.fa-fw {
+            width: 1.25em
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .fa-layers {
+            display: inline-block;
+            height: 1em;
+            position: relative;
+            text-align: center;
+            vertical-align: -.125em;
+            width: 1em
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+
+        .fa-layers-counter,
+        .fa-layers-text {
+            display: inline-block;
+            position: absolute;
+            text-align: center
+        }
+
+        .fa-layers-text {
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+
+        .fa-layers-counter {
+            background-color: #ff253a;
+            border-radius: 1em;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #fff;
+            height: 1.5em;
+            line-height: 1;
+            max-width: 5em;
+            min-width: 1.5em;
+            overflow: hidden;
+            padding: .25em;
+            right: 0;
+            text-overflow: ellipsis;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+
+        .fa-layers-bottom-right {
+            bottom: 0;
+            right: 0;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right
+        }
+
+        .fa-layers-bottom-left {
+            bottom: 0;
+            left: 0;
+            right: auto;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left
+        }
+
+        .fa-layers-top-right {
+            right: 0;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+
+        .fa-layers-top-left {
+            left: 0;
+            right: auto;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top left;
+            transform-origin: top left
+        }
+
+        .fa-lg {
+            font-size: 1.3333333333em;
+            line-height: .75em;
+            vertical-align: -.0667em
+        }
+
+        .fa-xs {
+            font-size: .75em
+        }
+
+        .fa-sm {
+            font-size: .875em
+        }
+
+        .fa-1x {
+            font-size: 1em
+        }
+
+        .fa-2x {
+            font-size: 2em
+        }
+
+        .fa-3x {
+            font-size: 3em
+        }
+
+        .fa-4x {
+            font-size: 4em
+        }
+
+        .fa-5x {
+            font-size: 5em
+        }
+
+        .fa-6x {
+            font-size: 6em
+        }
+
+        .fa-7x {
+            font-size: 7em
+        }
+
+        .fa-8x {
+            font-size: 8em
+        }
+
+        .fa-9x {
+            font-size: 9em
+        }
+
+        .fa-10x {
+            font-size: 10em
+        }
+
+        .fa-fw {
+            text-align: center;
+            width: 1.25em
+        }
+
+        .fa-ul {
+            list-style-type: none;
+            margin-left: 2.5em;
+            padding-left: 0
+        }
+
+        .fa-ul>li {
+            position: relative
+        }
+
+        .fa-li {
+            left: -2em;
+            position: absolute;
+            text-align: center;
+            width: 2em;
+            line-height: inherit
+        }
+
+        .fa-border {
+            border: solid .08em #eee;
+            border-radius: .1em;
+            padding: .2em .25em .15em
+        }
+
+        .fa-pull-left {
+            float: left
+        }
+
+        .fa-pull-right {
+            float: right
+        }
+
+        .fa.fa-pull-left,
+        .fab.fa-pull-left,
+        .fal.fa-pull-left,
+        .far.fa-pull-left,
+        .fas.fa-pull-left {
+            margin-right: .3em
+        }
+
+        .fa.fa-pull-right,
+        .fab.fa-pull-right,
+        .fal.fa-pull-right,
+        .far.fa-pull-right,
+        .fas.fa-pull-right {
+            margin-left: .3em
+        }
+
+        .fa-spin {
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear
+        }
+
+        .fa-pulse {
+            -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8)
+        }
+
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        .fa-rotate-90 {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+
+        .fa-rotate-180 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+
+        .fa-rotate-270 {
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg)
+        }
+
+        .fa-flip-horizontal {
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1)
+        }
+
+        .fa-flip-vertical {
+            -webkit-transform: scale(1, -1);
+            transform: scale(1, -1)
+        }
+
+        .fa-flip-both,
+        .fa-flip-horizontal.fa-flip-vertical {
+            -webkit-transform: scale(-1, -1);
+            transform: scale(-1, -1)
+        }
+
+        :root .fa-flip-both,
+        :root .fa-flip-horizontal,
+        :root .fa-flip-vertical,
+        :root .fa-rotate-180,
+        :root .fa-rotate-270,
+        :root .fa-rotate-90 {
+            -webkit-filter: none;
+            filter: none
+        }
+
+        .fa-stack {
+            display: inline-block;
+            height: 2em;
+            position: relative;
+            width: 2.5em
+        }
+
+        .fa-stack-1x,
+        .fa-stack-2x {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .svg-inline--fa.fa-stack-1x {
+            height: 1em;
+            width: 1.25em
+        }
+
+        .svg-inline--fa.fa-stack-2x {
+            height: 2em;
+            width: 2.5em
+        }
+
+        .fa-inverse {
+            color: #fff
+        }
+
+        .sr-only {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+
+        .sr-only-focusable:active,
+        .sr-only-focusable:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto
+        }
+
+        .svg-inline--fa .fa-primary {
+            fill: var(--fa-primary-color, currentColor);
+            opacity: 1;
+            opacity: var(--fa-primary-opacity, 1)
+        }
+
+        .svg-inline--fa .fa-secondary {
+            fill: var(--fa-secondary-color, currentColor);
+            opacity: .4;
+            opacity: var(--fa-secondary-opacity, .4)
+        }
+
+        .svg-inline--fa.fa-swap-opacity .fa-primary {
+            opacity: .4;
+            opacity: var(--fa-secondary-opacity, .4)
+        }
+
+        .svg-inline--fa.fa-swap-opacity .fa-secondary {
+            opacity: 1;
+            opacity: var(--fa-primary-opacity, 1)
+        }
+
+        .svg-inline--fa mask .fa-primary,
+        .svg-inline--fa mask .fa-secondary {
+            fill: #000
+        }
+
+        .fad.fa-inverse {
+            color: #fff
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+   
+
+    <style>
+        /* Ensure basic table styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        /* Header styling */
+        table thead th {
+            background-color: #004080;
+            /* Dark blue */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Alternating row colors for the body */
+        table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+            /* Light gray */
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #e0e0e0;
+            /* Slightly darker gray */
+        }
+
+        /* General cell styling */
+        table td,
+        table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        /* Center content in all cells */
+        table td,
+        table th {
+            text-align: center;
+            /* Horizontal alignment */
+            vertical-align: middle;
+            /* Vertical alignment */
+        }
+
+        /* Links styling */
+        table td a {
+            color: #004080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        table td a:hover {
+            text-decoration: underline;
+        }
+
+        /* Cells with colspan=2 span both columns */
+        table td.colspan-center {
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+    </style>
+
+
+    <script src="./js/scripts.js"></script>
+    <script>
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = '' + $(this).data('include')
+                $(this).load(file)
+            })
+        })
+    </script>
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div data-include="navigation.html?v=15"></div>
+
+    <!-- Workshops -->
+    <section id="pagetop">
+        <div class="container">
+            <div class="row">
+                <div class="text-justify">
+                    <h1 class="section-heading">Workshops and Tutorials </h1>
+
+
+                    <p> Below are the lists of workshops and tutorials co-organized with <a
+                            href="https://www.asplos-conference.org/asplos2025/call-for-workshops-and-tutorials">ASPLOS
+                            2025 </a> and EuroSys 2025.
+
+
+                    </p>
+
+
+                    <p>
+                        Further down, we show the <a
+                            href="https://2025.eurosys.org/workshops_and_tutorials.html/#schedule">schedule of the two
+                            workshop/tutorial</a> days (Sunday 30th
+                        March and Monday 1st April 2025).
+
+
+                    </p>
+
+                    <h2> Workshops </h2>
+
+                    <ul class="wp-block-list">
+                        <li>SIGARCH Visioning Workshop | Sustainable Computing: Challenges, Implications, and
+                            Opportunities</li>
+
+
+
+                        <li>Fifth European Workshop on Machine Learning and Systems (EuroMLSys)</li>
+
+
+
+                        <li>Principles and Practice of Consistency for Distributed Data (PaPoC)</li>
+
+
+
+                        <li><a href="https://asplos-contest.org/" data-type="link" data-id="https://asplos-contest.org/"
+                                target="_blank" rel="noreferrer noopener">ASPLOS 2025 Contest Tracks</a></li>
+
+
+
+                        <li><a href="https://yarch2025.stanford.edu/">7th Young Architect Workshop (YArch)</a></li>
+
+
+
+                        <li><a href="https://cheops-workshop.github.io/2025.html" data-type="link"
+                                data-id="https://cheops-workshop.github.io/2025.html">5th Edition of CHEOPS Workshop on
+                                Challenges and Opportunities of Efficient and Performant Storage Systems (CHEOPS)</a>
+                        </li>
+
+
+
+                        <li>4th Workshop on Heterogeneous Composable Disaggregated Systems (HCDS)</li>
+
+
+
+                        <li>The 8th International Workshop on Edge Systems, Analytics and Networking (EdgeSys)</li>
+
+
+
+                        <li>The 3rd Workshop &amp; Tutorial on SErverless Systems, Applications, and MEthodologies
+                            (SESAME)</li>
+
+
+
+                        <li>2nd Workshop on Empowering Software Development through Machine Learning (eSwML)</li>
+
+
+
+                        <li>1st Workshop on Memory-Centric Computing Systems (MCCSys)</li>
+
+
+
+                        <li><a href="https://greensys-org.github.io/workshop/" data-type="link"
+                                data-id="https://greensys-org.github.io/workshop/">1st International Workshop on Systems
+                                and Methods for Sustainable Large-Scale AI (GreenSys)</a></li>
+
+
+
+                        <li>Workshop on Languages, Tools, and Techniques for Accelerator Design (LATTE)</li>
+
+
+
+                        <li><a href="https://memani1.github.io/mlbench25/" data-type="link"
+                                data-id="https://memani1.github.io/mlbench25/">5th Workshop on Benchmarking and
+                                Performance of Machine Learning Workloads on Emerging Hardware (MLBench)</a></li>
+
+
+
+                        <li>Third International Workshop on Testing Distributed Internet of Things Systems (TDIS)</li>
+
+
+
+                        <li>1st Workshop on Systems and Architectures For Encrypted AI (SAFE-AI)</li>
+
+
+
+                        <li>Content-Aware Caching and Scheduling for Transformer Model Serving (CAT-Serve)</li>
+
+
+
+                        <li>A Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing
+                            (VisArch)</li>
+
+
+
+                        <li>2nd International Workshop on MetaOS for the Cloud-Edge-IoT Continuum (MECC)</li>
+
+
+
+                        <li>Workshop on Operating System Research for Connected Intelligence (WOSCI)</li>
+
+
+
+                        <li>User-Schedulable Languages (USL)</li>
+
+
+
+                        <li>European Workshop on Systems Security (EuroSec)</li>
+
+
+
+                        <li><a href="https://eurodw25.github.io/">20th EuroSys Doctoral Workshop (EuroDW)</a></li>
+                    </ul>
+
+                    <h2> Tutorials </h2>
+                    <ul class="wp-block-list">
+                        <li>XiangShan: An Open-Source High-Performance RISC-V Processor and Infrastructure for
+                            Architecture Research</li>
+
+
+
+                        <li>Agile Hardware Specialization</li>
+
+
+
+                        <li>Quantum Circuit Synthesis and Circuit Optimization</li>
+
+
+
+                        <li>Efficient Systems and Compilers for Generative AI</li>
+
+
+
+                        <li>ILLIXR: Illinois Extended Reality Testbed</li>
+
+
+
+                        <li><a href="https://github.com/LLNL/mpibind/tree/master/tutorials/eurosys25">4th Tutorial on
+                                Mapping and Affinity: Bridging Applications and Hardware (MAP)</a></li>
+
+
+
+                        <li>Understanding CXL: Memory, Coherence, and Opportunities in System Design</li>
+
+
+
+                        <li>AIBrix: An Open Source Large-Scale LLM Inference infrastructure for System Research</li>
+
+
+
+                        <li>xDSL: a Python-based compiler ecosystem</li>
+
+
+
+                        <li>OpenHarmony OS in System Research: A Practical Guide</li>
+
+
+
+                        <li>Open-source infrastructure for FPGAs in the datacenter: from the OS to the network</li>
+
+
+
+                        <li>Hardware-aware machine learning with Neuron Kernel Interface</li>
+                    </ul>
+
+
+                    <h1 class="section-heading" id="schedule">Sunday 30 March (ASPLOS only) </h1>
+
+
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Room</th>
+                                <th>Morning</th>
+                                <th>Afternoon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mees II</td>
+                                <td>FPGAs in the datacenter</td>
+                                <td>Agile hardware tutorial</td>
+                            </tr>
+                            <tr>
+                                <td>Mees I</td>
+                                <td class="colspan-center" colspan="2"><a
+                                        href="https://yarch2025.stanford.edu/">YArch</a></td>
+                            </tr>
+                            <tr>
+                                <td>Penn room II</td>
+                                <td class="colspan-center" colspan="2">MCCSys</td>
+                            </tr>
+                            <tr>
+                                <td>Penn room I</td>
+                                <td class="colspan-center" colspan="2"><a href="https://asplos-contest.org/"
+                                        target="_blank" rel="noreferrer noopener">ASPLOS 2025 Contest Tracks</a></td>
+                            </tr>
+                            <tr>
+                                <td>Leeuwen room I</td>
+                                <td class="colspan-center" colspan="2"><a
+                                        href="https://greensys-org.github.io/workshop/">GreenSys</a></td>
+                            </tr>
+                            <tr>
+                                <td>Leeuwen room II</td>
+                                <td>xDSL</td>
+                                <td>AIBrix</td>
+                            </tr>
+                            <tr>
+                                <td>Goudriaan I</td>
+                                <td>HCDS</td>
+                                <td>Understanding CXL</td>
+                            </tr>
+                            <tr>
+                                <td>Goudriaan II</td>
+                                <td>SysComp for Generative AI</td>
+                                <td>ILLIXR</td>
+                            </tr>
+                            <tr>
+                                <td>J.F. Staalroom</td>
+                                <td class="colspan-center" colspan="2">LATTE</td>
+                            </tr>
+                            <tr>
+                                <td>New York I (upstairs)</td>
+                                <td>XiangShan tutorial</td>
+                                <td>Quantum Circuit</td>
+                            </tr>
+                            <tr>
+                                <td>New York II (upstairs)</td>
+                                <td class="colspan-center" colspan="2"><a
+                                        href="https://memani1.github.io/mlbench25/">MLBench</a></td>
+                            </tr>
+                            <tr>
+                                <td>Tokyo Room (first floor)</td>
+                                <td class="colspan-center" colspan="2">SIGARCH Visioning: Sustainable Computing</td>
+                            </tr>
+                            <tr>
+                                <td>Blue Room</td>
+                                <td class="colspan-center" colspan="2">VisArch</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h1 class="section-heading" id="schedule">Monday 31 March (<a href="https://www.asplos-conference.org/asplos2025/">ASPLOS</a> and EuroSys) </h1>
+                    
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Room</th>
+                                <th>Morning</th>
+                                <th>Afternoon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mees II</td>
+                                <td class="colspan-center" colspan="2">EdgeSys</td>
+                            </tr>
+                            <tr>
+                                <td>Mees I</td>
+                                <td class="colspan-center" colspan="2">SESAME</td>
+                            </tr>
+                            <tr>
+                                <td>Penn room II</td>
+                                <td class="colspan-center" colspan="2">EuroMLSys</td>
+                            </tr>
+                            <tr>
+                                <td>Penn room I</td>
+                                <td class="colspan-center" colspan="2">EuroSec</td>
+                            </tr>
+                            <tr>
+                                <td>Leeuwen room I</td>
+                                <td class="colspan-center" colspan="2">
+                                    <a href="https://cheops-workshop.github.io/2025.html">CHEOPS</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Leeuwen room II</td>
+                                <td>Amazon NKI</td>
+                                <td>TDIS</td>
+                            </tr>
+                            <tr>
+                                <td>Goudriaan I</td>
+                                <td>OpenHarmonyOS</td>
+                                <td>eSwML</td>
+                            </tr>
+                            <tr>
+                                <td>Goudriaan II</td>
+                                <td>CAT-Serve</td>
+                                <td>
+                                    <a href="https://github.com/LLNL/mpibind/tree/master/tutorials/eurosys25">MAP</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>J.F. Staalroom</td>
+                                <td class="colspan-center" colspan="2">PaPoC 2025</td>
+                            </tr>
+                            <tr>
+                                <td>New York I (upstairs)</td>
+                                <td class="colspan-center" colspan="2">MECC 2025</td>
+                            </tr>
+                            <tr>
+                                <td>New York II (upstairs)</td>
+                                <td class="colspan-center" colspan="2">SAFE-AI</td>
+                            </tr>
+                            <tr>
+                                <td>Tokyo Room (first floor)</td>
+                                <td class="colspan-center" colspan="2">
+                                    <a href="https://eurodw25.github.io/">EuroSys Doctoral Workshop (EuroDW)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Blue Room</td>
+                                <td>WOCSI</td>
+                                <td>USL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                    <h2>Contact</h2>
+
+                    For any further information, please contact the workshop chairs:
+
+                    <ul>
+                        <li> <a href="mailto:s.s.chakraborty@tudelft.nl">Soham Chakraborty</a></li>
+                        <li> <a href="mailto:a.katsifodimos@tudelft.nl">Asterios Katsifodimos</a></li>
+                    </ul>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy; EuroSys 2025</span><br />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
