@@ -41,22 +41,24 @@ document.addEventListener('DOMContentLoaded', event => {
 
 $(document).ready(function(){
     var images=[
-        'img/img01.jpg',
-        'img/img02.jpg',
-        'img/img03.jpg',
-        'img/img04.jpg',
-        'img/img05.jpg',
-        'img/img06.jpg',
-        'img/img07.jpg',
-        'img/img08.jpg',
-		'img/img09.jpg',
-		'img/img10.jpg',
-		'img/img11.jpg',
-		'img/img12.jpg',
-		'img/img13.jpg',
-		'img/img14.jpg',
-		'img/img15.jpg',
-		'img/img16.jpg'
+        // 'img/rotterdam.jpg',
+        'imgrotterdam1.jpg'
+        // 'img/img01.jpg',
+        // 'img/img02.jpg',
+        // 'img/img03.jpg',
+        // 'img/img04.jpg',
+        // 'img/img05.jpg',
+        // 'img/img06.jpg',
+        // 'img/img07.jpg',
+        // 'img/img08.jpg',
+		// 'img/img09.jpg',
+		// 'img/img10.jpg',
+		// 'img/img11.jpg',
+		// 'img/img12.jpg',
+		// 'img/img13.jpg',
+		// 'img/img14.jpg',
+		// 'img/img15.jpg',
+		// 'img/img16.jpg'
 ];
 
     var randomNumber = Math.floor(Math.random() * images.length);
