@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', event => {
 $(document).ready(function(){
     var images=[
         // 'img/rotterdam.jpg',
-        'imgrotterdam1.jpg'
+        'img/rotterdam1.jpg'
         // 'img/img01.jpg',
         // 'img/img02.jpg',
         // 'img/img03.jpg',
