@@ -41,8 +41,13 @@ document.addEventListener('DOMContentLoaded', event => {
 
 $(document).ready(function(){
     var images=[
+        'img/Rotterdam/Kubus.jpg',
+        'img/Rotterdam/Museum_Boijmans.jpg',
+        'img/Rotterdam/Museum_Rotterdam.jpg',
+        'img/Rotterdam/Rotterdam_Skyline.jpg',
+        'img/Rotterdam/Rotterdam_spring.jpg'
         // 'img/rotterdam.jpg',
-        'img/rotterdam1.jpg'
+        // 'img/rotterdam1.jpg'
         // 'img/img01.jpg',
         // 'img/img02.jpg',
         // 'img/img03.jpg',
