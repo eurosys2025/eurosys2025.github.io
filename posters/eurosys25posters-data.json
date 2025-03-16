@@ -1,0 +1,1899 @@
+[
+    {
+        "object": "paper",
+        "pid": 4,
+        "title": "Dandelion Hashtable: Cracking the Billion Memory Requests Per Second Barrier — Effortlessly",
+        "abstract": "This poster presents DLHT, a concurrent in-memory hashtable. Despite efforts to optimize hashtables, that go as far as sacrificing core functionality, state-of-the-art designs still incur multiple memory accesses per request and block request processing in three cases. First, most hashtables block while waiting for data to be retrieved from memory. Second, open-addressing designs, which represent the current state-of-the-art, either cannot free index slots on deletes or must block all requests to do so. Third, index resizes block every request until all objects are copied to the new index. Defying folklore wisdom, DLHT forgoes open-addressing and adopts a fully-featured and memory-aware closed-addressing design based on bounded cache-line-chaining. This design offers lock-free index operations and deletes that free slots instantly, (2) completes most requests with a single memory access, (3) utilizes software prefetching to hide memory latencies, and (4) employs a novel non-blocking and parallel resizing. In a commodity server and a memory-resident workload, DLHT surpasses 1.6B requests per second and provides 3.5× (12×) the throughput of the state-of-the-art closed-addressing (open-addressing) resizable hashtable on Gets (Deletes).",
+        "authors": [
+            {
+                "email": "antonios.katsarakis@huawei.com",
+                "first": "Antonios",
+                "last": "Katsarakis",
+                "affiliation": "Huawei Research",
+                "contact": true
+            },
+            {
+                "email": "vasilis.gavrielatos@huawei.com",
+                "first": "Vasilis",
+                "last": "Gavrielatos",
+                "affiliation": "Huawei Research"
+            },
+            {
+                "email": "nikos.ntarmos@huawei.com",
+                "first": "Nikos",
+                "last": "Ntarmos",
+                "affiliation": "Huawei Research UK"
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-4a124afa51fba474ff0d4735ab71c5fe9c9e48dd7cb7d55747aacc9f61d4da59",
+            "timestamp": 1738746249,
+            "size": 3505801,
+            "filename": "DLHT_Eurosys25-poster.pdf",
+            "pages": 3,
+            "content_file": "eurosys25posters-paper4.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-f0126f0a51a4960356e241549842be5b77f04ef8dd616e49f13f33bd4ee0fad7",
+            "timestamp": 1741422490,
+            "size": 325364,
+            "filename": "DLHT_Eurosys25_poster-final.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final4.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738746249,
+        "final_submitted": true,
+        "final_submitted_at": 1741422490,
+        "modified_at": 1741422490,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 11,
+        "title": "Towards Interference-aware Application Co-locations",
+        "abstract": "Interference among co-located applications is a major concern among Cloud Service Providers that aim to maximize the utilization of their resources, while maintaining the quality of service for their tenants. Prior work relies on modelling techniques that predict interference and support co-location decisions, but fails to provide a practical solution that can accommodate co-locations beyond pairwise placements, avoid per-application offline profiling and seamlessly incorporate new, unseen applications.\nIn this work, we propose a prediction model that can drive multi-wise co-locations of applications within a CPU socket through the use of unsupervised learning techniques. By clustering applications based on resource access patterns and leveraging co-execution results, our approach constructs inferred heatmaps that facilitate co-location decisions across multiple degrees.",
+        "authors": [
+            {
+                "email": "ypap@cslab.ece.ntua.gr",
+                "first": "Ioannis A.",
+                "last": "Papadakis",
+                "affiliation": "National Technical University of Athens",
+                "contact": true
+            },
+            {
+                "email": "nkoziris@cslab.ece.ntua.gr",
+                "first": "Nectarios",
+                "last": "Koziris",
+                "affiliation": "National Technical University of Athens, Greece"
+            },
+            {
+                "email": "goumas@cslab.ece.ntua.gr",
+                "first": "Georgios",
+                "last": "Goumas",
+                "affiliation": "National Technical University of Athens"
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1cd7875f7cc0f5399a0e7c01a665088798aedb15d3d437f690b9242ade8e4eb8",
+            "timestamp": 1738839933,
+            "size": 401863,
+            "filename": "EuroSys_25_poster.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper11.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3d7b4132dc7fcd616156b221506ebad831d34579024edc28c5fa822224866ef2",
+            "timestamp": 1741188138,
+            "size": 400873,
+            "filename": "EuroSys_25_poster.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final11.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738836959,
+        "final_submitted": true,
+        "final_submitted_at": 1741188138,
+        "modified_at": 1741188138,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 13,
+        "title": "Beyond Layers: Container Registries for Files Distribution and On-Demand Image Partitioning",
+        "abstract": "Thanks to OCI standardization, containers now describe a complete end-to-end environment for packaging, distributing, and deploying software and its dependencies.\nUnfortunately, the complexity of modern applications creates use cases that are not yet supported by this technology.\nFor example, packaging machine learning model weights in containers requires extensive build times, reduces flexibility, and forces developers to seek alternative, custom solutions.\nAnother example is platform-specific drivers and binaries, which are often included in container fat images but involve cache invalidations for every minor change.\nIn our work, we extend the container layered structure with a new two-dimensional filesystem layer type, specifically designed for efficient handling of large data.\nThe proposed layer type allows highly parallelized image builds and fine-grained layer caching, while also providing a mechanism for on-demand partitions. Such partitions enable developers to request a subset of the image, e.g., containing only a portion of a machine learning model or a specific set of drivers for a given architecture. \nThe proposed implementation is fully OCI-compliant, allowing distribution of such customized images to any container runtime with no additional effort.\nOur implementation, called 2DFS, achieves 56x faster build times and 25x better caching efficiency compared to Docker, while providing on-demand image partitioning with no overhead.",
+        "authors": [
+            {
+                "email": "giovanni.bartolomeo@tum.de",
+                "first": "Giovanni",
+                "last": "Bartolomeo",
+                "affiliation": "Technical University of Munich",
+                "contact": true
+            },
+            {
+                "email": "navidreza.asadi@tum.de",
+                "first": "Navidreza",
+                "last": "Asadi",
+                "affiliation": "Technical University of Munich",
+                "contact": true
+            },
+            {
+                "email": "wolfgang.kellerer@tum.de",
+                "first": "Wolfgang",
+                "last": "Kellerer",
+                "affiliation": "Technical University of Munich"
+            },
+            {
+                "email": "ott@in.tum.de",
+                "first": "Jorg",
+                "last": "Ott",
+                "affiliation": "Technische Universität München",
+                "contact": true
+            },
+            {
+                "email": "n.mohan@tudelft.nl",
+                "first": "Nitinder",
+                "last": "Mohan",
+                "affiliation": "TU Delft",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-768ef78bf3701bf6859891cf926837d3b26fd3cc8f5646d35c424e4da7e8f8d5",
+            "timestamp": 1738255844,
+            "size": 573319,
+            "filename": "EuroSys_25_Poster___Beyond_Layers__Container_Registries_for_Files_Distribution_and_On_Demand_Image_Partitioning.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper13.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-c6c3a720f7dff1f67190be2dfb4fd689deeedd7e523d000bf4ee1feda366215f",
+            "timestamp": 1741347845,
+            "size": 581819,
+            "filename": "Camera_Ready___EuroSys_25_Poster___Beyond_Layers__Container_Registries_for_Files_Distribution_and_On_Demand_Image_Partitioning.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final13.pdf"
+        },
+        "pc_conflicts": {
+            "h.j.griffioen@tudelft.nl": true,
+            "n.mohan@tudelft.nl": "collaborator author",
+            "giovanni.bartolomeo@tum.de": "collaborator author",
+            "C.Ji@tudelft.nl": true,
+            "A.Agiollo-1@tudelft.nl": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738255844,
+        "final_submitted": true,
+        "final_submitted_at": 1740661022,
+        "modified_at": 1741347845,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 15,
+        "title": "Boosting Rematerialization Training via Execution Mode Splitting Modeling on Convex Optimized Dynamic Programming",
+        "abstract": "Training large-scale models has become increasingly challenging because of \\textit{GPU memory wall}. \nRematerialization in graph mode lacks universality, while eager mode is not efficient. \nMoreover, existing methods are difficult for further research because of their trouble in secondary development. In this paper, we propose mixed mode, a unified and efficient execution mode to boost large-scale model training via optimal sequence splitting which possesses universality and efficiency at the same time. Utilizing mixed mode, we released a new framework named TSO with non-intrusive modification to current frameworks.  Experimental results demonstrate that TSO achieves better training efficiency than state-of-the-art methods, even 7.99$\\times$ speedup compared to intrusive methods.",
+        "authors": [
+            {
+                "email": "tangyu14@nudt.edu.cn",
+                "first": "Yu",
+                "last": "Tang",
+                "affiliation": "National University of Defense Technology",
+                "contact": true
+            },
+            {
+                "email": "925980313@qq.com",
+                "first": "Lujia",
+                "last": "Yin",
+                "affiliation": "National University of Defense Technology"
+            },
+            {
+                "email": "qiaoli045@gmail.com",
+                "first": "Qiao",
+                "last": "Li",
+                "affiliation": "Xiamen University"
+            },
+            {
+                "email": "sdiris@gmail.com",
+                "first": "Yiming",
+                "last": "Zhang",
+                "affiliation": "Xiamen University"
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1530d21fcfa65e5a98397ab4555f942dead18ebfa65850491febbb3648c898c3",
+            "timestamp": 1738160197,
+            "size": 444811,
+            "filename": "EuroSys_TSO.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper15.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3e370a2bcf4fe82613d8f489d1d3e05e5bc0b31fd28ed3b9f712b41b4b8ca9dd",
+            "timestamp": 1741421758,
+            "size": 441794,
+            "filename": "EuroSys_TSO.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final15.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1737944493,
+        "final_submitted": true,
+        "final_submitted_at": 1741336609,
+        "modified_at": 1741421758,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 16,
+        "title": "The LAW Behind ALRs: Redefining Crash-Tolerant Reads",
+        "abstract": "Distributed datastores are the backbone of modern highly-concurrent read-intensive applications and they are responsible for providing consistency, availability, and performance. Datastores deploy crash-tolerant replication protocols to replicate data across multiple servers and endure replica server crashes. To ensure safety and accommodate the performance demands of datastores, replication protocols must offer high throughput reads that are strongly consistent (i.e., linearizable) without making any synchrony assumptions. However, existing crash-tolerant protocols either (1) relax consistency; or offer linearizable reads that are either (2)~fully-asynchronous and remote (i.e., involve multiple replicas); or (3) local but mandate some sort of synchrony.\n\nThis work demonstrates a fundamental tradeoff between consistency, asynchrony, and performance of crash-tolerant protocols by introducing the L$^{2}$AW impossibility. The L$^{2}$AW asserts that  \\textit{in any linearizable asynchronous read\/write register implementation that tolerates even a single crash, no reads are local}. We prove this impossibility even in the absence of Byzantine faults, message losses, and network partitions.\n\nGuided by this result, we introduce the idea of  \\textit{almost-local reads} (ALRs), which can be implemented in a crash-tolerant and linearizable manner under asynchrony. ALRs inevitably have higher latency than local reads, but they are very lightweight, with computation and network costs close to local (single-node) reads. As such, we demonstrate that the tradeoff exposed by L$^{2}$AW affects mostly the latency and not the throughput of reads. We present two simple yet effective ALR schemes which can improve protocols falling into either of the three categories. When applied to protocols offering local reads, they remove their consistency or synchrony deficiencies with minimal overhead. Meanwhile, ALRs can also boost the performance of existing asynchronous linearizable protocols without compromises. Our evaluation shows that ALR-enhanced variants of ZAB and Hermes protocols on 95\\% reads come within 2\\% and 5\\% of their original throughput, respectively,  while also ensuring linearizability under asynchrony. Finally, ALRs yield over 2.5$\\times$ higher throughput on Raft in read-intensive workloads without sacrificing consistency or asynchrony.",
+        "authors": [
+            {
+                "email": "antonios.katsarakis@huawei.com",
+                "first": "Antonios",
+                "last": "Katsarakis",
+                "affiliation": "Huawei Research",
+                "contact": true
+            },
+            {
+                "email": "emmanouil.giortamis@tum.de",
+                "first": "Emmanouil",
+                "last": "Giortamis",
+                "affiliation": "TU Munich",
+                "contact": true
+            },
+            {
+                "email": "Vasilis.Gavrielatos@huawei.com",
+                "first": "Vasilis",
+                "last": "Gavrielatos",
+                "affiliation": "Huawei Research"
+            },
+            {
+                "email": "pramod.bhatotia@gmail.com",
+                "first": "Pramod",
+                "last": "Bhatotia",
+                "affiliation": "TU Munich"
+            },
+            {
+                "email": "aleksandar.dragojevic@gmail.com",
+                "first": "Aleksandar",
+                "last": "Dragojevic",
+                "affiliation": "None"
+            },
+            {
+                "email": "boris.grot@ed.ac.uk",
+                "first": "Boris",
+                "last": "Grot",
+                "affiliation": "University of Edinburgh"
+            },
+            {
+                "email": "vijay@cs.utah.edu",
+                "first": "Vijay",
+                "last": "Nagarajan",
+                "affiliation": "University of Utah"
+            },
+            {
+                "email": "faturu@csd.uoc.gr",
+                "first": "Panagiota",
+                "last": "Fatourou",
+                "affiliation": "FORTH ICS and University of Crete, Greece"
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-dcb62234925b6a2ebd7605053d6f6ee0ecd0871b7c2b028efe0088d25e4b5617",
+            "timestamp": 1737815381,
+            "size": 3614473,
+            "filename": "LAW-poster-eurosys25.pdf",
+            "pages": 3,
+            "content_file": "eurosys25posters-paper16.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-05766d0ad3033052c263e08265f063e69df90e793c392495a5d23a3c4b2c98fb",
+            "timestamp": 1741424628,
+            "size": 428201,
+            "filename": "Law_Eurosys25_poster-final.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final16.pdf"
+        },
+        "pc_conflicts": {
+            "n.mohan@tudelft.nl": "pinned collaborator",
+            "giovanni.bartolomeo@tum.de": true,
+            "vaastav@mpi-sws.org": "pinned collaborator"
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738746466,
+        "final_submitted": true,
+        "final_submitted_at": 1741424628,
+        "modified_at": 1741424628,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 21,
+        "title": "Reproducible Fault Injection at the Operating System Level",
+        "abstract": "Distributed systems underlie many critical systems and services. To ensure their robustness and reliability, they employ a multitude of algorithms, techniques, and mechanisms. Their inherent complexity makes them prone to bugs which often are only revealed when external faults occur at specific application states. A lot of work has been done in the field of exploration, where tools inject faults to search for bugs. However, developers still need to reproduce the conditions that led to the bugs to find their root cause and deploy a fix. \nState-of-the-art approaches in bug reproduction are focused only on JVM-based systems and support limited faults. Our approach aims to efficiently trace a distributed system execution to obtain a trace when a bug occurs, and use it to deduce What happened? and When did it happen? With this information, we can create a scenario where the buggy workflow occurs.  \nOur preliminary results show that our approach is able to reproduce bugs across different systems (from KV stores to consensus algorithms) written in different languages.",
+        "authors": [
+            {
+                "email": "sebastiao.amaro@tecnico.ulisboa.pt",
+                "first": "Sebastião",
+                "last": "Amaro",
+                "affiliation": "IST Lisbon & INESC-ID",
+                "contact": true
+            },
+            {
+                "email": "miguel.marques.matos@tecnico.ulisboa.pt",
+                "first": "Miguel",
+                "last": "Matos",
+                "affiliation": "IST Lisbon & INESC-ID",
+                "contact": true
+            },
+            {
+                "email": "pfonseca@purdue.edu",
+                "first": "Pedro",
+                "last": "Fonseca",
+                "affiliation": "Purdue University",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-79476f78c1ad01901848ce095a38df394d860d7a5c4935762bed73f587312bd0",
+            "timestamp": 1738840332,
+            "size": 428448,
+            "filename": "Reproducible_Fault_Injection_at_the_Operating_System_Level.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper21.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-d25d761a28619cbf1bedbe58192e228df583a7966510498926f880b06932795b",
+            "timestamp": 1741187500,
+            "size": 428499,
+            "filename": "Reproducible_Fault_Injection_at_the_Operating_System_Level.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final21.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738839369,
+        "final_submitted": true,
+        "final_submitted_at": 1741187500,
+        "modified_at": 1741187500,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 26,
+        "title": "Evolving XFS with Zoned Storage and Intelligent Data Placement",
+        "abstract": "This extended abstract presents our efforts to enable zoned storage with XFS and how it expands the existing zoned storage work found in other enterprise filesystems in two ways. Firstly, we utilize the zone append primitive,  which eliminates the need to serialize the writes to the storage device. Secondly, we reduce write amplification and improve garbage collection performance by co-locating user data with similar lifetimes into zones based on file locality and application hints. To achieve this, we enhance XFS with a new zoned allocator and a defragmenting garbage collection algorithm and evaluate the performance benefits on in-production storage devices using RocksDB.",
+        "authors": [
+            {
+                "email": "hans.holmberg@wdc.com",
+                "first": "Hans",
+                "last": "Holmberg",
+                "affiliation": "Western Digital Research",
+                "contact": true
+            },
+            {
+                "email": "christoph.hellwig@wdc.com",
+                "first": "Christoph",
+                "last": "Hellwig",
+                "affiliation": "Western Digital Research",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-94a8421177cc1c2410553bf317726590c670326447b3b428b8d8c4e8bc11233f",
+            "timestamp": 1738659038,
+            "size": 406501,
+            "filename": "EuroSys_25_Zoned_XFS_Poster_Abstract_V1.pdf",
+            "pages": 1,
+            "content_file": "eurosys25posters-paper26.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a8f681cd15c34e743b22d4c666e1bcff7cecda802707c4ce0bd69c1e97e4d02a",
+            "timestamp": 1741336748,
+            "size": 585620,
+            "filename": "EuroSys_25_Zoned_XFS_Extended_Abstract.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final26.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738677773,
+        "final_submitted": true,
+        "final_submitted_at": 1741336661,
+        "modified_at": 1741336748,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 33,
+        "title": "GraphGen+: Advancing Distributed Subgraph Generation and Graph Learning On Industrial Graphs",
+        "abstract": "Graph-based computations are crucial in a wide range of applications, including social networks, finance, and drug discovery, where graphs can scale to trillions of edges. To enable efficient training on such large graphs, mini-batch subgraph sampling is commonly used, which allows training without loading the entire graph into memory. However, existing solutions face significant trade-offs: online subgraph generation, as seen in frameworks like DGL and PyG, is limited to a single machine, resulting in severe performance bottlenecks, while offline precomputed subgraphs, as in GraphGen, improve sampling efficiency but introduce large storage overhead and high I\/O costs during training. To address these challenges, we propose \\textbf{GraphGen+}, an integrated framework that synchronizes distributed subgraph generation with in-memory graph learning, eliminating the need for external storage while significantly improving efficiency. GraphGen+ achieves a \\textbf{27$\\times$} speedup in subgraph generation compared to conventional SQL-like methods and a \\textbf{1.3$\\times$} speedup over GraphGen, supporting training on 1 million nodes per iteration and removing the overhead associated with precomputed subgraphs, making it a scalable and practical solution for industry-scale graph learning.",
+        "authors": [
+            {
+                "email": "jinyue.jy@antgroup.com",
+                "first": "Yue",
+                "last": "Jin",
+                "affiliation": "Ant Group",
+                "contact": true
+            },
+            {
+                "email": "yongchao.ly@antgroup.com",
+                "first": "Yongchao",
+                "last": "Liu",
+                "affiliation": "Ant Group",
+                "contact": true
+            },
+            {
+                "email": "chuntao.hct@antgroup.com",
+                "first": "Chuntao",
+                "last": "Hong",
+                "affiliation": "Ant Group",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-97d42827e1684e41e6879426309cd47e1cad714b461746cf9355363902e4085e",
+            "timestamp": 1738748163,
+            "size": 304514,
+            "filename": "GraphGen___Advancing_Distributed_Subgraph_Generation_and_Graph_Learning_On_Industrial_Graphs.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper33.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-0100b6080b10a8fd4bac735e6bef39689feacb6936fbd135b863f6f977d14775",
+            "timestamp": 1740968187,
+            "size": 358628,
+            "filename": "GraphGen___Advancing_Distributed_Subgraph_Generation_and_Graph_Learning_On_Industrial_Graphs.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final33.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738748169,
+        "final_submitted": true,
+        "final_submitted_at": 1740455118,
+        "modified_at": 1740968187,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 45,
+        "title": "Kirsch: It's 2025. Does your OS know what's on your SoC?",
+        "abstract": "Modern operating systems -- including seL4 -- are written \nto a fictional model of machine hardware from the 1960s \nand 1970s: a set of homogeneous cores accessing a common \nphysical address space containing main memory, plus memory-mapped devices.\nHowever, modern SoCs and server platforms are \nreally a complex network of heterogeneous cores and \nintelligent devices, many of which are running their \nown firmware and ``operating systems''.\nThe result is a catastrophe of system design,\nincluding a plethora of security exploits \nlike remote over-the-air compromises due to \nweaknesses in WiFi modem firmware. \nLink: https:\/\/googleprojectzero.blogspot.com\/2017\/04\/over-air-exploiting-broadcoms-wi-fi_11.html.\n\nWe are building Kirsch, a new OS that solves \nthis problem by embracing and formally capturing the \nheterogeneity and multiple trust domains of modern hardware.\nTo this end, Kirsch formally models what each hardware context\ncan access using a decoding net representation of the platform,\nwhich induces a trust relationship between contexts.\nThis trust relationshp is the basis for reasoning about isolation,\nprotection and authorization in the system.",
+        "authors": [
+            {
+                "email": "roman.meier@inf.ethz.ch",
+                "first": "Roman",
+                "last": "Meier",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "zikai.liu@inf.ethz.ch",
+                "first": "Zikai",
+                "last": "Liu",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "ben.fiedler@inf.ethz.ch",
+                "first": "Ben",
+                "last": "Fiedler",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "troscoe@inf.ethz.ch",
+                "first": "Timothy",
+                "last": "Roscoe",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-73143f92533b82fb919ac1d9a6ad6ebc4ece0ab7971b1c3f88cab21e2cda3289",
+            "timestamp": 1738834162,
+            "size": 329487,
+            "filename": "kirsch-poster-abstract-its-2025.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper45.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-b0788c4154d72f56ddb0f8c8d81b068660d13ebec4b230ca64cf2687926a6d88",
+            "timestamp": 1741350020,
+            "size": 335383,
+            "filename": "kirsch-poster-abstract-its-2025.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final45.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738834695,
+        "final_submitted": true,
+        "final_submitted_at": 1741343616,
+        "modified_at": 1741350020,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 47,
+        "title": "ConsenStress: A Framework to Torture Test Consensus Protocols",
+        "abstract": "Consensus protocols serve as the foundation for strongly consistent and fault-tolerant distributed systems. Despite the theoretical guarantees of safety and liveness, most consensus protocol implementations have robustness issues that often go unnoticed until a major failure occurs in production, causing significant financial losses.\n\nWe propose ConsenStress, a novel black-box testing framework tailored for detecting robustness issues in consensus protocols. Unlike existing frameworks that only allow testing of one or a few protocols, ConsenStress enables seamless testing of unmodified binaries of arbitrary consensus protocols. ConsenStress introduces a novel attack “interface” that allows users to write complex attack scenarios using a novel high-level API, eliminating the need to handle low-level implementation details. Finally, ConsenStress includes more than 30 concrete attack implementations and supports 16 consensus protocol integrations, enabling a wide range of attacks across different types of consensus protocols.\n\nOur preliminary evaluation identifies previously undiscovered robustness issues in existing consensus protocol implementations, demonstrating ConsenStress’s capability to detect complex robustness issues in consensus protocol implementations.",
+        "authors": [
+            {
+                "email": "pasindu.tennage@epfl.ch",
+                "first": "Pasindu",
+                "last": "Tennage",
+                "affiliation": "EPFL",
+                "contact": true
+            },
+            {
+                "email": "shailesh.mishra@epfl.ch",
+                "first": "Shailesh",
+                "last": "Mishra",
+                "affiliation": "EPFL"
+            },
+            {
+                "email": "alberto@mystenlabs.com",
+                "first": "Alberto",
+                "last": "Sonnino",
+                "affiliation": "Mysten Labs, UCL",
+                "contact": true
+            },
+            {
+                "email": "lefteris@mystenlabs.com",
+                "first": "Lefteris",
+                "last": "Kokoris-Kogias",
+                "affiliation": "Mysten Labs"
+            },
+            {
+                "email": "p.jovanovic@ucl.ac.uk",
+                "first": "Philipp",
+                "last": "Jovanovic",
+                "affiliation": "UCL"
+            },
+            {
+                "email": "bryan.ford@epfl.ch",
+                "first": "Bryan",
+                "last": "Ford",
+                "affiliation": "EPFL"
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-71656ac8c2535125a594970d9cf75691e6fc42ded0e6e69825dac6912040c665",
+            "timestamp": 1738794656,
+            "size": 443293,
+            "filename": "torture_poster_2025_feb_5_23.26.pdf",
+            "pages": 3,
+            "content_file": "eurosys25posters-paper47.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-4530880eac4d4ed2b23fb93f9da11817d001e3bb0b8f7a73afdada644e19d588",
+            "timestamp": 1741333529,
+            "size": 442631,
+            "filename": "torture_poster_march_7_13.14_camera_ready.pdf",
+            "pages": 3,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final47.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738794656,
+        "final_submitted": true,
+        "final_submitted_at": 1741290670,
+        "modified_at": 1741333952,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 55,
+        "title": "Distributed Graph Neural Network Inference With Just-In-Time Compilation For Industry-Scale Graphs",
+        "abstract": "Graph neural networks (GNNs) have delivered remarkable results in various fields. However, the rapid increase in the scale of graph data has introduced significant performance bottlenecks for GNN inference. Both computational complexity and memory usage have risen dramatically, with memory becoming a critical limitation. Although graph sampling-based subgraph learning methods can help mitigate computational and memory demands, they come with drawbacks such as information loss and high redundant computation among subgraphs.\nThis paper introduces an innovative processing paradgim for distributed graph learning that abstracts GNNs with a new set of programming interfaces and leverages Just-In-Time (JIT) compilation technology to its full potential. This paradigm enables GNNs to highly exploit the computational resources of distributed clusters by eliminating the drawbacks of subgraph learning methods, leading to a more efficient inference process.\nOur experimental results demonstrate that on industry-scale graphs of up to \\textbf{500 million nodes and 22.4 billion edges}, our method can produce a performance boost of up to \\textbf{27.4 times}.",
+        "authors": [
+            {
+                "email": "wuxiabao.wxb@antgroup.com",
+                "first": "Xiabao",
+                "last": "Wu",
+                "affiliation": "Ant Group, China"
+            },
+            {
+                "email": "yongchao.ly@antgroup.com",
+                "first": "Yongchao",
+                "last": "Liu",
+                "affiliation": "Ant Group, China",
+                "contact": true
+            },
+            {
+                "email": "johnny.qw@antgroup.com",
+                "first": "Wei",
+                "last": "Qin",
+                "affiliation": "Ant Group, China"
+            },
+            {
+                "email": "chuntao.hct@antgroup.com",
+                "first": "Chuntao",
+                "last": "Hong",
+                "affiliation": "Ant Group, China",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-b1de02571fc8df0667a921a3311f5661e6f590ececeeb8ed44410e1c0678e42c",
+            "timestamp": 1738737250,
+            "size": 344969,
+            "filename": "Distributed_Graph_Neural_Network_Inference_with_just_in_time_Compilation_for_industry_scale_graphs.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper55.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-634dcd091dd9475f961727f21c9b2884b75b79d6c0d174fe634d40788c119136",
+            "timestamp": 1740738219,
+            "size": 364468,
+            "filename": "CR_Euro2025_Distributed_Graph_Neural_Network_Inference_with_just_in_time_Compilation.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final55.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738737250,
+        "final_submitted": true,
+        "final_submitted_at": 1740622468,
+        "modified_at": 1740738219,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 63,
+        "title": "Socarrat: Building Cost-Effective Secure WORM Devices Following the Reverse File System Approach",
+        "abstract": "WORM (Write Once Read Many) devices permit data to be written only once. Subsequently, the system can read the data an unlimited number of times. These devices are used for logging and other purposes (like backups) and are essential for a wide range of applications. Socarrat is a local cost-effective software-based WORM device for log files based on the Reverse File System approach based on inferring file system operations from the block device traffic. Socarrat presents as a regular USB filesystem to the host device, but preserves WORM properties while minimizing the attack surface. Moreover, in case of total compromise, it provides tamper-evident guarantees for the log data.",
+        "authors": [
+            {
+                "email": "gorka.guardiola@urjc.es",
+                "first": "Gorka Guardiola",
+                "last": "Múzquiz",
+                "affiliation": "Universidad Rey Juan Carlos",
+                "contact": true
+            },
+            {
+                "email": "enrique.soriano@urjc.es",
+                "first": "Enrique",
+                "last": "Soriano-Salvador",
+                "affiliation": "Universidad Rey Juan Carlos"
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1c674d7eab9fd7b4ab1af6cb9d72649c490b0646f820dac9b81a62ee2b0f15c3",
+            "timestamp": 1738750366,
+            "size": 417097,
+            "filename": "soca.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper63.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9c9fe4777926eb8314ecb164abe5e924cf2f995482aa08367306802654e8742e",
+            "timestamp": 1740570339,
+            "size": 417366,
+            "filename": "soca.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final63.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738750366,
+        "final_submitted": true,
+        "final_submitted_at": 1740570339,
+        "modified_at": 1740570339,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 71,
+        "title": "Dandelion: Small Clusters, Massive Throughput—The Future of Distributed Transactions",
+        "abstract": "We present an in-memory, RDMA-enabled, highly-available, transactional Key-Value Store (KVS), dubbed Dandelion, focusing on significantly improving performance in small deployments (e.g., 5 machines). The focus on small deployments is motivated by the emerging memory expansion (e.g., via CXL), which enables the deployment of KVSes with few machines but lots of memory.\n\nA small deployment presents locality opportunities that have not been examined by related work. Specifically, it is more likely that at any given time, we must send multiple messages to the same recipient. We leverage this by batching multiple requests in the same network packet. Similarly, it is more likely that at any given time, we have multiple requests that can be served by the local hashtable without going through the network. Sending all requests to the hashtable as a batch allows it to overlap their memory latencies through software prefetching. Finally, it is more likely that the node that requests a key, is itself a backup of that key. We leverage this by allowing local reads from backups. \n\nOur evaluation shows that these optimizations and careful engineering result in hundreds of millions of distributed, strongly consistent, and 3-way replicated transactions per second with very few machines. This also translates to 3.3 - 6.5x throughput improvement over a state-of-the-art system, FaSST, in OLTP workloads in a 5-machine deployment. We characterize the impact and scalability of each of these optimizations with up to 10 machines -- where Dandelion still offers up to 3.5$\\times$ higher throughput than FaSST.",
+        "authors": [
+            {
+                "email": "antonios.katsarakis@huawei.com",
+                "first": "Antonios",
+                "last": "Katsarakis",
+                "affiliation": "Huawei Research",
+                "contact": true
+            },
+            {
+                "email": "vasilis.gavrielatos@huawei.com",
+                "first": "Vasilis",
+                "last": "Gavrielatos",
+                "affiliation": "Huawei Research"
+            },
+            {
+                "email": "cjj39@cam.ac.uk",
+                "first": "Chris",
+                "last": "Jensen",
+                "affiliation": "University of Cambridge"
+            },
+            {
+                "email": "nikos.ntarmos@huawei.com",
+                "first": "Nikos",
+                "last": "Ntarmos",
+                "affiliation": "Huawei Research UK"
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-6f0d0bf1731cb49e5058eea4e4304d8b3ccdc98ab48447aef36d5f984a255d18",
+            "timestamp": 1738746284,
+            "size": 2703268,
+            "filename": "Dandelion_Eurosys25-poster.pdf",
+            "pages": 3,
+            "content_file": "eurosys25posters-paper71.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-d3d00c7d0066560307dbdd5067ee397cb7800d320a09c0f97aeb39026f955820",
+            "timestamp": 1741424335,
+            "size": 485650,
+            "filename": "Dandelion_Eurosys25_posters-final.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final71.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738746284,
+        "final_submitted": true,
+        "final_submitted_at": 1741424335,
+        "modified_at": 1741424335,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 72,
+        "title": "Maestro: VM memory overcommit balancing platform",
+        "abstract": "Cloud providers seek to reduce memory requirements as VMs often underutilize memory provisioned for peak loads, allowing for the reclamation and repurposing of cold memory. Recent hardware trends make 2MiB swapping appealing. We introduce Maestro: a platform that balances overcommitted memory for multiple VMs. Our novel policy, combined with 2MiB swapping, demonstrates promising results by outperforming the Linux kernel's state-of-the-art balancing under constrained memory and achieving a 30% improvement in overall system performance.",
+        "authors": [
+            {
+                "email": "adamos.ttofari@huawei.com",
+                "first": "Adamos",
+                "last": "Ttofari",
+                "affiliation": "Huawei",
+                "contact": true
+            },
+            {
+                "email": "lukas.humbel@huawei.com",
+                "first": "Lukas",
+                "last": "Humbel",
+                "affiliation": "Huawei",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-ad6f8e5ba60efbd2865b9d60793dc5bbbfa0a9498f2289e807d66c407198f5bc",
+            "timestamp": 1738832654,
+            "size": 429828,
+            "filename": "Maestro_poster (6).pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper72.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-11992e69e3165a1ac354e29c049272799b8112930c996b85365428774f6396e5",
+            "timestamp": 1741080966,
+            "size": 431707,
+            "filename": "Maestro_poster (7).pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final72.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738772196,
+        "final_submitted": true,
+        "final_submitted_at": 1741080966,
+        "modified_at": 1741080966,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 74,
+        "title": "Towards Efficient Large Language Model Serving for Multi-turn Conversations",
+        "abstract": "Engaging in multi-turn conversations with humans has become one of the most popular capabilities of large language models (LLMs). To meet the distinct resource demands and SLO targets of the prefill and decode phases, existing systems typically disaggregate these phases to separate instances. However, we identify significant inefficiencies in memory usage and network communication due to this disaggregation, which leads to a noticeable drop in serving throughput. To address this, we introduce Mutel, a system designed for efficient LLM serving in multi-turn conversations. The core idea behind Mutel is to seamlessly bridge the prefill and decode instances through lightweight, resource-efficient Attention parallelism. Experimental results demonstrate that Mutel significantly improves the serving throughput by up to 54.6% compared with state-of-the-art baselines.",
+        "authors": [
+            {
+                "email": "liaojx9@mail2.sysu.edu.cn",
+                "first": "Jianxiong",
+                "last": "Liao",
+                "affiliation": "Sun Yat-sen University",
+                "contact": true
+            },
+            {
+                "email": "zhouzhi9@mail.sysu.edu.cn",
+                "first": "Zhi",
+                "last": "Zhou",
+                "affiliation": "Sun Yat-sen University",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-e528f90376be4415ce200d9db4410158cba36c130fcffcef6d48f8135fd051b0",
+            "timestamp": 1738634238,
+            "size": 408833,
+            "filename": "Mutel.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper74.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-e6ab20d65fa3302c2adeabe1e8b54ee50897b63bd5501e893b96209c95f1be88",
+            "timestamp": 1741266210,
+            "size": 409329,
+            "filename": "Eurosys_Poster.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final74.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738634238,
+        "final_submitted": true,
+        "final_submitted_at": 1741252505,
+        "modified_at": 1741266210,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 84,
+        "title": "RoCE BALBOA: Towards FPGA-enhanced RDMA",
+        "abstract": "With increasingly data-intensive applications such as Machine Learning training and inference, the network is a bottleneck in data center computing. To fulfill the demands of such applications, RDMA has been adopted from the HPC domain as the dominating high-performance network protocol, which makes up up to 70% of all network volume in a typical setup. Based on the key principles of host bypassing and zero-copy, the network standard allows for low latency, high throughput, and low CPU utilization at the same time. However, these very design features also pose problems when using RDMA in the public cloud and reveal the lack of three key features: RoCE v2 does not specify any form of traffic encryption, misses access control as OS-enforced rules are bypassed by design, and, finally, does not compress payloads for a reduced bandwidth consumption in already oversubscribed networks. While previous studies demonstrated RDMA-protocols with such enhancements implemented on the host OS or in SmartNICs with embedded CPUs, no project has yet shown a truly performance-preserving, 100G-capable RoCE v2 implementation offering expendability for various protocol enhancements through accessible interfaces. In our work, we explore the use of FPGA-based SmartNICs in the context of capability-enhanced RDMA, by combining a self-developed, open-source and fully RoCE v2-compatible networking stack with exemplaric hardware modules for AES-encryption, snappy-compression, and machine learning-based Deep Packet Inspection (DPI) for access control that utilize stream computing to achieve 100G line rate speed without any performance overhead on the host CPU (Figure 1). Furthermore, our design allows to add any other user-defined application directly on the RDMA data streams, leveraging the reconfigurable fabric for offloading network processing from the host CPU to the FPGA-NIC at full line rate.",
+        "authors": [
+            {
+                "email": "maximilian.heer@inf.ethz.ch",
+                "first": "Maximilian Jakob",
+                "last": "Heer",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "benjamin.ramhorst@inf.ethz.ch",
+                "first": "Benjamin",
+                "last": "Ramhorst",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "jonas.dann@inf.ethz.ch",
+                "first": "Jonas",
+                "last": "Dann",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "alonso@inf.ethz.ch",
+                "first": "Gustavo",
+                "last": "Alonso",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a9bf623f2a8609c71625bdf65ccca701b5db25fa61da2dbc58991186d649929b",
+            "timestamp": 1738753382,
+            "size": 462020,
+            "filename": "EuroSys__25__RoCE_BALBOA_Poster.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper84.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a9bf623f2a8609c71625bdf65ccca701b5db25fa61da2dbc58991186d649929b",
+            "timestamp": 1741259034,
+            "size": 462020,
+            "filename": "EuroSys__25__RoCE_BALBOA_Poster.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final84.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738753382,
+        "final_submitted": true,
+        "final_submitted_at": 1741259034,
+        "modified_at": 1741259034,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 86,
+        "title": "Bounded Resource Reclamation",
+        "abstract": "Fast resource reclamation in operating systems is critical for performance-sensitive scenarios, yet is understudied compared to resource allocation.\nThis paper addresses the challenge of resource reclamation by proposing a novel design that guarantees bounded resource reclamation.\nPredictable reclamation latency is important in dynamic, resource-sensitive, high-utilization scenarios like Open-RAN and function as a service.\nWe analyze reclamation latency across Linux, L4Re, and M³, demonstrating that reclamation time can significantly delay process termination, up to multiple seconds.\nTo mitigate this, we propose a design that enforces reclamation quotas by subtracting expected cleanup costs during resource allocation.\nAdditionally, we suggest resource grouping to accelerate bulk reclamation during process termination.\nA preliminary prototype on the M³ kernel highlights the effectiveness of resource grouping, consequently accelerating process termination.",
+        "authors": [
+            {
+                "email": "viktor.reusch@barkhauseninstitut.org",
+                "first": "Viktor",
+                "last": "Reusch",
+                "affiliation": "Barkhausen Institut",
+                "contact": true
+            },
+            {
+                "email": "till.miemietz@barkhauseninstitut.org",
+                "first": "Till",
+                "last": "Miemietz",
+                "affiliation": "Barkhausen Institut",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3048182967ad437b6abfc5af4347db1fed1ff4dbb79fb28ed024235e646c22cf",
+            "timestamp": 1738836969,
+            "size": 155583,
+            "filename": "paper.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper86.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-bae8d84a40fbd9961eda7bdfc399354fd577414b8479f7e2012bf40da69c218b",
+            "timestamp": 1740471414,
+            "size": 131767,
+            "filename": "paper.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final86.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738759381,
+        "final_submitted": true,
+        "final_submitted_at": 1740470836,
+        "modified_at": 1740471414,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 87,
+        "title": "Towards Energy-Efficient Split Computing: A Hardware-Software Co-Design Perspective",
+        "abstract": "Edge ML faces resource and energy constraints, requiring optimized split computing, which partitions inference between edge and cloud. We propose a two-phase framework combining offline optimization and dynamic scheduling. It jointly configures split points and hardware settings to balance energy and latency.",
+        "authors": [
+            {
+                "email": "daniel.may@tuwien.ac.at",
+                "first": "Daniel",
+                "last": "May",
+                "affiliation": "Technische Universität Wien (TU Wien)",
+                "contact": true
+            },
+            {
+                "email": "alessandro.tundo@tuwien.ac.at",
+                "first": "Alessandro",
+                "last": "Tundo",
+                "affiliation": "Technische Universität Wien (TU Wien)",
+                "contact": true
+            },
+            {
+                "email": "s.s.ilager@uva.nl",
+                "first": "Shashikant",
+                "last": "Ilager",
+                "affiliation": "University of Amsterdam (UvA)",
+                "contact": true
+            },
+            {
+                "email": "ivona.brandic@tuwien.ac.at",
+                "first": "Ivona",
+                "last": "Brandic",
+                "affiliation": "Technische Universität Wien (TU Wien)",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-66f80751eda81b46e2777bf0dd7702b4a8333ab48d24e7b2d0a0ffd4f2fba5b8",
+            "timestamp": 1738773688,
+            "size": 552136,
+            "filename": "Towards Energy-Efficient Split Computing A Hardware-Software Co-Design Perspective.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper87.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-e0b50e1813881ffc79e4a2942bae280def597271fb5cbe233300b42fc76ba811",
+            "timestamp": 1741356266,
+            "size": 557062,
+            "filename": "SPLINTER_EuroSys_Poster.pdf",
+            "pages": 2,
+            "format_status": "warning",
+            "format": "fonttype",
+            "content_file": "eurosys25posters-final87.pdf"
+        },
+        "pc_conflicts": {
+            "k.freiherrvongleissenthal@vu.nl": "pinned collaborator"
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738773688,
+        "final_submitted": true,
+        "final_submitted_at": 1741352735,
+        "modified_at": 1741356266,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 96,
+        "title": "Systems for LLMs Are Old News: Multimodality Is Redefining Everything We Know",
+        "abstract": "Large Language Models (LLMs) power numerous AI applications but pose challenges due to their high computational cost and latency-sensitive nature. While existing system optimizations have improved LLM inference, the emergence of Multimodal Large Language Models (MLLMs), capable of processing images, videos, and audio, introduces new challenges. Our analysis reveals that MLLM inference significantly increases memory consumption (up to 100$\\times$) and latency (up to 2$\\times$ higher TTFT) due to the encoding of multimodal inputs. Existing LLM-specific optimizations fail to address these challenges, necessitating novel systems tailored for MLLMs. We highlight key inefficiencies in current approaches and outline the need for optimized memory management, scheduling policies, and workload characterization for MLLM inference. Moving forward, we aim to develop an MLLM-specific system that efficiently handles multimodal workloads while maintaining performance and accuracy.",
+        "authors": [
+            {
+                "email": "konstantinos.papaioannou@imdea.org",
+                "first": "Konstantinos",
+                "last": "Papaioannou",
+                "affiliation": "IMDEA Software Institute",
+                "contact": true
+            },
+            {
+                "email": "thaleia.doudali@imdea.org",
+                "first": "Thaleia Dimitra",
+                "last": "Doudali",
+                "affiliation": "IMDEA Software Institute",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-46c03c3dc696f6c482ab7a2ee7cffc79950dc7b89066cc2612be9f03e38f1a93",
+            "timestamp": 1738752449,
+            "size": 347689,
+            "filename": "EuroSys_2025_Poster_Konstantinos.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper96.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-67ce28708e106da644b395d232c5a862e74cbacf233c5fb75141cf8383c83af7",
+            "timestamp": 1740732523,
+            "size": 347497,
+            "filename": "EuroSys_2025_Poster_Konstantinos.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final96.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738752449,
+        "final_submitted": true,
+        "final_submitted_at": 1740731990,
+        "modified_at": 1740732523,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 99,
+        "title": "Maximizing Return On Investment for Sustainable Operations through Smart Workload Migration",
+        "abstract": "The push for sustainable computing has led to an increased adoption of carbon-aware workload migration, where applications are shifted to time periods and regions with lower carbon intensity. Recently proposed solutions rely on the existence of infrastructures across multiple countries, assuming access to greener locations. However, this does not reflect the reality of national companies that only have on-premise IT infrastructure. For such companies to become more sustainable, they must inevitably increase their monetary expenses and expand their native or cloud infrastructure to other countries. Our analysis quantifies this trade-off between sustainability and cost: while migrating workloads to greener regions reduces carbon emissions by an order of magnitude, it also doubles deployment costs. Yet, we uncover a key insight: the application type and characteristics, such as latency and storage footprint, significantly impact carbon emissions and migration costs. This highlights the need for novel solutions that maximize returns on investments.",
+        "authors": [
+            {
+                "email": "georgia.christofidi@imdea.org",
+                "first": "Georgia",
+                "last": "Christofidi",
+                "affiliation": "IMDEA Software Institute, Universidad Politécnica de Madrid",
+                "contact": true
+            },
+            {
+                "email": "francisco.alvarezterribas@telefonica.com",
+                "first": "Francisco Álvarez",
+                "last": "Terribas",
+                "affiliation": "Telefónica Research",
+                "contact": true
+            },
+            {
+                "email": "jesusalberto.omana@telefonica.com",
+                "first": "Jesus Alberto Omaña",
+                "last": "Iglesias",
+                "affiliation": "Telefónica Research",
+                "contact": true
+            },
+            {
+                "email": "nkourtellis@gmail.com",
+                "first": "Nicolas",
+                "last": "Kourtellis",
+                "affiliation": "Keysight",
+                "contact": true
+            },
+            {
+                "email": "thaleia.doudali@imdea.org",
+                "first": "Thaleia Dimitra",
+                "last": "Doudali",
+                "affiliation": "IMDEA Software Institute",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-12c92a63aa12f0893b4f780d14cd2cad41f10e88f20b423c007cfdfd8c22b54f",
+            "timestamp": 1738677598,
+            "size": 107596,
+            "filename": "EuroSys__25_Poster_Abstract.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper99.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-85c9f96df54ff664ee86a37b8d81271e1c26bd413e4e6a089ae32f49968e636d",
+            "timestamp": 1741351673,
+            "size": 350892,
+            "filename": "Camera_Ready_Poster_EuroSys__25_Georgia.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final99.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738670390,
+        "final_submitted": true,
+        "final_submitted_at": 1740744681,
+        "modified_at": 1741351673,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 102,
+        "title": "An Architecture for Shrinking the TCB of TEEs on Heterogeneous Systems",
+        "abstract": "Trusted Execution Environments (TEEs) enable secure code execution on machines that are not fully controlled by the user who runs the code. However, existing TEE solutions do not provide unified support for systems with heterogeneous core architectures or accelerators. Furthermore, their implementation is complex and requires the user to trust (typically closed) firmware in addition to the TEE hardware. We propose a heterogeneous TEE architecture with minimal hardware support to reduce the trust in firmware, as well as a minimal Root-of-Trust that enables features such as remote attestation for such TEEs.",
+        "authors": [
+            {
+                "email": "nils.asmussen@barkhauseninstitut.org",
+                "first": "Nils",
+                "last": "Asmussen",
+                "affiliation": "Barkhausen Institut",
+                "contact": true
+            },
+            {
+                "email": "carsten.weinhold@barkhauseninstitut.org",
+                "first": "Carsten",
+                "last": "Weinhold",
+                "affiliation": "Barkhausen Institut",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-78c0dd8d26f33fef05f5dfc4d2eb5c459074800a0deb6b87fb0d8029a6bd5973",
+            "timestamp": 1738835455,
+            "size": 326558,
+            "filename": "main.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper102.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-bf2da827d888e157b24401065e5cc421524f11a36ad5fa60cea599a684c79311",
+            "timestamp": 1740721397,
+            "size": 326638,
+            "filename": "main.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final102.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738789594,
+        "final_submitted": true,
+        "final_submitted_at": 1740721397,
+        "modified_at": 1740721397,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 108,
+        "title": "DuoSwap: adaptive concurrent swapping to compressed memory and NVMe SSD",
+        "abstract": "Swapping transparently reduces the memory footprint of an application.\nThe two prevalent techniques for swapping are in-memory compression and moving data from memory to a slower but more cost-effective tier, typically an SSD. Commonly, priority is given to compression due to the limited speed of SSD devices. Swapping to an SSD is used only when swapping by compression is disabled, when the data is not compressible or when the space for swapping by compression is depleted. \n\nIn this paper, we revisit this tradeoff for modern storage devices.\nWe argue that the high bandwidth and low latency of these devices, for instance NVMe SSDs, warrant a design change in the swap subsystem. \nWe show that the concurrent usage of swapping by compression and swapping to NVMe SSD improves performance in memory overcommit scenarios.\n\nThe relative performance of swapping by compression and swapping to NVMe SSD is dependent on a number of factors, including compressibility of the data, CPU load and I\/O load.\nWe present an adaptive algorithm, DuoSwap, in which we take these factors into account to decide what data to compress and what data to send to NVMe SSD.\nThis adaptive algorithm consistently offers good performance over a wide range of circumstances, whereas any static division of labor only performs well in a limited subset of scenarios.\n\nWe have implemented DuoSwap in the Linux kernel.\nWe demonstrate its performance benefits by using the pmbench microbenchmark and by presenting measurement results for Masstree and Memcached.",
+        "authors": [
+            {
+                "email": "yyan9833@uni.sydney.edu.au",
+                "first": "Yuben",
+                "last": "Yang",
+                "affiliation": "University of Sydney",
+                "contact": true
+            },
+            {
+                "email": "baptiste.lepers@gmail.com",
+                "first": "Baptiste",
+                "last": "Lepers",
+                "affiliation": "Inria",
+                "contact": true
+            },
+            {
+                "email": "kimkeeton@google.com",
+                "first": "Kimberly",
+                "last": "Keeton",
+                "affiliation": "Google",
+                "contact": true
+            },
+            {
+                "email": "kelmeleegy@google.com",
+                "first": "Khaled",
+                "last": "Elmeleegy",
+                "affiliation": "Google",
+                "contact": true
+            },
+            {
+                "email": "willy.zwaenepoel@sydney.edu.au",
+                "first": "Willy",
+                "last": "Zwaenepoel",
+                "affiliation": "University of Sydney",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1505c794c29f4d8ee48d33d3bb42ef7dd1911a8e5230fcd8f0c8aa619c5d8ab6",
+            "timestamp": 1738794460,
+            "size": 372134,
+            "filename": "swap_project_poster_submission.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper108.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a6a6634620d68ff9ee7bb610354f322c8b39595c0a5502d29416b02142a485de",
+            "timestamp": 1741956108,
+            "size": 371323,
+            "filename": "DuoSwap_camera_ready.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final108.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738768223,
+        "final_submitted": true,
+        "final_submitted_at": 1740486603,
+        "modified_at": 1741956108,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 109,
+        "title": "Efficient Deep Learning Inference on IoT Devices",
+        "abstract": "Deploying deep learning models on resource-constrained IoT devices based on microcontroller units (MCU) is appealing, but faces significant challenges due to constrained computational capabilities and memory resources. To squeeze deep learning models into MCU, we propose MCUQ, a novel framework that combines an efficient quantization approach (RLQuant) with a lightweight low-precision inference engine (LiteEngine). RLQuant finds the optimal quantization policy by solving a bi-level optimization problem, where the upper optimization problem utilizes reinforcement learning to search for the optimal bitwidth and the lower optimization problem utilizes SGD for quantization step. After each iteration of RL, LiteEngine is executed by employing generic operand packing technique, which reduces memory requirements and accelerates model inference. LiteEngine is closely coupled with RLQuant due to feedback on its inference latency, memory usage and accuracy, wherein such feedback is used in determining the optimal quantization policy of RLQuant through reinforcement learning. MCUQ results in reduced memory usage by $1.5-2.8\\times$ and accelerated inference by $1.6-3.0\\times$ compared to CMix-NN, CMSIS-NN, and TinyEngine.",
+        "authors": [
+            {
+                "email": "2022310711@student.cup.edu.cn",
+                "first": "Zhizhuo",
+                "last": "Liu",
+                "affiliation": "China University of Petroleum-Beijing",
+                "contact": true
+            },
+            {
+                "email": "bolaixv@gmail.com",
+                "first": "Min",
+                "last": "Liu",
+                "affiliation": "China University of Petroleum-Beijing"
+            },
+            {
+                "email": "xuchaonong@cup.edu.cn",
+                "first": "Chaonong",
+                "last": "Xu",
+                "affiliation": "China University of Petroleum-Beijing"
+            },
+            {
+                "email": "lichao@zhejianglab.com",
+                "first": "Chao",
+                "last": "Li",
+                "affiliation": "Zhejiang Lab"
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-93fe5db76ed8c9e9a44deed7ce5f17dc35cd0bb07ff5716b631d8f8aeacc7766",
+            "timestamp": 1738836881,
+            "size": 538085,
+            "filename": "Eurosys_2025_poster.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper109.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-ef5c1a611a908ca0c6235bdf4883a8033979197d1c6c51c948f077f93697943e",
+            "timestamp": 1741084712,
+            "size": 542260,
+            "filename": "Eurosys_2025_poster .pdf",
+            "pages": 2,
+            "format_status": "warning",
+            "format": "fonttype",
+            "content_file": "eurosys25posters-final109.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738836881,
+        "final_submitted": true,
+        "final_submitted_at": 1741084712,
+        "modified_at": 1741084712,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 126,
+        "title": "HuffmanEmbed: Using Huffman Coding for Embedding Table Compression in Deep Learning Recommendation Models",
+        "abstract": "Deep Learning Recommendation Models (DLRMs) have become widely popular for click-through rate (CTR) prediction tasks. These models often rely on embedding tables to enhance their predictive performance. Each row in these tables represents a trainable weight vector associated with a specific feature instance (embedding index) of a categorical feature. The embedding table sizes have grown into Terabytes over time as  model accuracy improves with larger table sizes. Large models put significant burden on GPU memory and compute resources. To solve this burden prior work employed embedding table compression schemes, but at the cost of reduced model accuracy.\n\n    This paper introduces HuffmanEmbed, a novel embedding table compression framework that improves accuracy at a given compression ratio. This work is based on the observation that not every categorical feature instance should be given the same learnable parameter width. Categorical feature instances have highly skewed access counts in any training dataset. HuffmanEmbed encodes embedding indices into varying-length unique codes based on their access frequencies. The embedding tables themselves are restructured to exploit the varying-length codes enabling significant model compression while preserving crucial information for accurate prediction.",
+        "authors": [
+            {
+                "email": "chaoyij@usc.edu",
+                "first": "Chaoyi",
+                "last": "Jiang",
+                "affiliation": "University of Southern California",
+                "contact": true
+            },
+            {
+                "email": "aalshaba@usc.edu",
+                "first": "Abdulla",
+                "last": "Alshabanah",
+                "affiliation": "University of Southern California",
+                "contact": true
+            },
+            {
+                "email": "entezari@usc.edu",
+                "first": "Hossein Entezari",
+                "last": "Zarch",
+                "affiliation": "University of Southern California"
+            },
+            {
+                "email": "keshavba@usc.edu",
+                "first": "Keshav",
+                "last": "Balasubramanian",
+                "affiliation": "University of Southern California"
+            },
+            {
+                "email": "annavara@usc.edu",
+                "first": "Murali",
+                "last": "Annavaram",
+                "affiliation": "University of Southern California",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a9ea8d5a6c8801b2793a01fe83b5ce594c70b24f68b4114d7ec92a6b6a46ee86",
+            "timestamp": 1738795905,
+            "size": 449142,
+            "filename": "EuroSys25_Poster___HuffmanEmbed.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper126.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-13cea9ef38b985de16a530973f0c917ca729d3b6a7f438769ae7d4dbea0964da",
+            "timestamp": 1741394182,
+            "size": 449259,
+            "filename": "EuroSys25_Poster___HuffmanEmbed__camera_ready_.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final126.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738795905,
+        "final_submitted": true,
+        "final_submitted_at": 1741394182,
+        "modified_at": 1741394182,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 130,
+        "title": "Lauberhorn: a Smart NIC that is part of the OS",
+        "abstract": "Traditional data center RPC architectures are based on an arbitrary split of networking states between the CPU and NIC.  Current approaches to the server networking stack explore trade-offs between flexibility, efficiency, and performance: kernel-bypass approaches sacrifice flexibility for performance by dedicating CPU cores to applications that busy-poll the NIC, while more flexible approaches incur high software overhead on the data path.  With Lauberhorn, we argue that the aforementioned split is the source of trouble; we propose a radical new, OS-centric approach that allows performance on-par with kernel-bypass solutions without sacrificing flexibility.  We make use of cache-coherent interconnects to implement efficient fine-grained communication between the CPU and NIC.  We implement RPC dispatch completely on the NIC through various accelerators.  We deeply integrate with the NIC with the OS scheduling system through a _multi-level scheduling_ approach, putting the NIC in charge of what gets executed on the CPU.  Preliminary results from a prototype system we build on Enzian show high potential: sub-microsecond round-trip latency of fine-grained communication between the CPU and NIC.",
+        "authors": [
+            {
+                "email": "pengcheng.xu@inf.ethz.ch",
+                "first": "Pengcheng",
+                "last": "Xu",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "troscoe@inf.ethz.ch",
+                "first": "Timothy",
+                "last": "Roscoe",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-0468242490488e7fa69aa11c1dc6c0a733dea7a7e44ffa7320159ec4eaebc4c3",
+            "timestamp": 1738840532,
+            "size": 328679,
+            "filename": "paper.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper130.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-ec03c9d66d48b36128c5f37f698f5949eb09282c333470b480b7f9ae9eb7d19a",
+            "timestamp": 1741347160,
+            "size": 328381,
+            "filename": "paper.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final130.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738840532,
+        "final_submitted": true,
+        "final_submitted_at": 1741347160,
+        "modified_at": 1741347160,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 160,
+        "title": "Automated Reasoning About Memory Accesses on Systems-on-Chip",
+        "abstract": "The complexity of modern hardware platforms has increased greatly in the last\ndecades, and this trend shows no sign of slowing down. The resulting\ninteractions between multiple different memory translation and protection\nmechanisms, each potentially managed by a different software stack, give rise to\nsecurity vulnerabilities. We developed a prototype toolchain for formally specifying these hardware components, their interactions, and target security properties. The resulting\nmodels can be automatically analyzed via SMT solvers, which determine whether a\nparticular platform is vulnerable or not, and even provides an attack trace in\nthe former case. Our toolchain is both capable of modeling and finding exploits\nin existing systems, as well as investigating how these can be prevented in the\nfuture.",
+        "authors": [
+            {
+                "email": "ben.fiedler@inf.ethz.ch",
+                "first": "Ben",
+                "last": "Fiedler",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "samuel.gruetter@inf.ethz.ch",
+                "first": "Samuel",
+                "last": "Gruetter",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "troscoe@inf.ethz.ch",
+                "first": "Timothy",
+                "last": "Roscoe",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3ed21aa5ff8a414dfb451e9861c4c0cc5df80e8f3f626bcb0e686a25c52f9c12",
+            "timestamp": 1738841296,
+            "size": 318001,
+            "pages": 2,
+            "content_file": "eurosys25posters-paper160.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738835684,
+        "modified_at": 1738841296,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 163,
+        "title": "Dynamic Dispatcher Assignment With Flat-Combining",
+        "abstract": "Modern operating systems introduce novel scheduler designs to meet service-level objectives in datacenters to minimize tail latency.\nCentralized queueing is a widely used approach that achieves microsecond-scale latency but relies on a pinned dispatcher thread to handle network requests, which limits overall CPU efficiency.\nIn this work, we introduce a new scheduler design inspired by flat-combining, where a worker thread is dynamically promoted to the dispatcher when needed.\nBy leveraging the flat-combining mechanism, our approach reduces lock contention and maintains minimal performance overhead while enhancing overall resource efficiency.\nIn experiments with our preliminary implementation, our design achieves up to 84\\% lower P99 latency and 14\\% higher throughput compared to baselines in a RocksDB workload.",
+        "authors": [
+            {
+                "email": "lgm9@kaist.ac.kr",
+                "first": "Gangmin",
+                "last": "Lee",
+                "affiliation": "KAIST",
+                "contact": true
+            },
+            {
+                "email": "wsyoon@kaist.ac.kr",
+                "first": "Wonsup",
+                "last": "Yoon",
+                "affiliation": "KAIST",
+                "contact": true
+            },
+            {
+                "email": "sbmoon@kaist.ac.kr",
+                "first": "Sue",
+                "last": "Moon",
+                "affiliation": "KAIST",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-568f4b121b0f04a6a7c308b16b3c85c866c1438ac2bea3b045e0052d1e5d0e39",
+            "timestamp": 1738835481,
+            "size": 617609,
+            "filename": "Eurosys_poster.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper163.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-5d9d2b66514d606c03372a65dfcda2733e036f21ecb58612c53e0bf1915a46c0",
+            "timestamp": 1741416350,
+            "size": 617516,
+            "filename": "Dynamic Dispatcher Assignment With Flat-Combining.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final163.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738837346,
+        "final_submitted": true,
+        "final_submitted_at": 1741416350,
+        "modified_at": 1741416350,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 168,
+        "title": "Systematic Testing of Persistent Memory Programs",
+        "abstract": "Persistent memory (PM) offers performance comparable to DRAM and non-volatility.\nHowever, writing correct and performant PM programs is difficult as witnessed by the large number of tools to find bugs in PM applications.\nThese tools offer different coverage and performance trade-offs but the underlying challenge is the combinatorial explosion of possible states that can be observed in a post-crash execution.\nNotably, most existing tools explore only a small fraction of the possible state space, limiting their coverage.\n\nWe argue that it is possible to perform a broader, systematic exploration of the search space in useful time, and with that provide greater bug coverage.\nIn this work we present a methodology to achieve this goal, based on the semantics of the hardware, deduplication of crash states, semantic equivalence of crash states, and parallelization.",
+        "authors": [
+            {
+                "email": "henrique.dominguez@tecnico.ulisboa.pt",
+                "first": "Henrique",
+                "last": "Fernandes",
+                "affiliation": "IST U. Lisboa & INESC-ID",
+                "contact": true
+            },
+            {
+                "email": "joao.tiago.goncalves@tecnico.ulisboa.pt",
+                "first": "João",
+                "last": "Gonçalves",
+                "affiliation": "IST U. Lisboa & INESC-ID",
+                "contact": true
+            },
+            {
+                "email": "miguel.marques.matos@tecnico.ulisboa.pt",
+                "first": "Miguel",
+                "last": "Matos",
+                "affiliation": "IST U. Lisboa & INESC-ID",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-c63976f582b89750b2965297fa25e09f1490fd8879677f9e891879d76c52485b",
+            "timestamp": 1738837670,
+            "size": 325334,
+            "filename": "main.pdf",
+            "pages": 2,
+            "content_file": "eurosys25posters-paper168.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-bba03660088d82c1ecc7918d836525b955b2f179932d862811de77740aea4fe2",
+            "timestamp": 1740655612,
+            "size": 325219,
+            "filename": "main.pdf",
+            "pages": 2,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final168.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738837670,
+        "final_submitted": true,
+        "final_submitted_at": 1740655612,
+        "modified_at": 1740655612,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    },
+    {
+        "object": "paper",
+        "pid": 183,
+        "title": "Ad-hoc composable cache coherent systems - a fairy tale?",
+        "abstract": "Emerging open cache coherent interconnect standards like CXL [2] allow us to build dynamically\ncomposable, heterogeneous NUMA systems that transparently maintain system-wide cache coherence in hardware.\n\nOur experience in building the Enzian platform [1] has convinced us\nthat these composable, transparently coherent NUMA systems will never be realised.\nInteroperability and implementation challenges aside, we expect that\nthe performance of transparently maintained coherence will suffer greatly from\nthe lack of explicit co-design and integration of dynamically composed\ncomponents.\nWith this work, we aim to demonstrate that the traditional, transparent management of private\ncaches is inherently unsuited to ad-hoc composed systems, because it relies on\ncareful integration and co-design of all involved components to achieve\nacceptable performance.\n\nWith our poster, we want to raise the issue of mismatched\ndirectory with the community, using an abstract example where a directory starts\nthrashing because of a streaming-like memory access by a remote node with\na comparatively oversized cache. We want to spark a discussion about whether it\nis worth solving this issue to enable composable coherent systems and if so, how we\nshould introduce more software control over hardware-maintained cache coherence\nto mitigate resource mismatches.",
+        "authors": [
+            {
+                "email": "jasmin.schult@inf.ethz.ch",
+                "first": "Jasmin",
+                "last": "Schult",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            },
+            {
+                "email": "troscoe@inf.ethz.ch",
+                "first": "Timothy",
+                "last": "Roscoe",
+                "affiliation": "ETH Zurich",
+                "contact": true
+            }
+        ],
+        "poster_accepted_eurosys_2025_paper?": false,
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3264c8b0aab15ef6ab304c7bb8a9e65d276e3ec869da7c58fe9d81e82ea6c15b",
+            "timestamp": 1738842208,
+            "size": 288092,
+            "filename": "poster.pdf",
+            "pages": 1,
+            "content_file": "eurosys25posters-paper183.pdf"
+        },
+        "final": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-47bbc39443f81c6a2e04821a191d57dca0d27429f102e1a7b77ad5d848f6d99d",
+            "timestamp": 1741364256,
+            "size": 287251,
+            "filename": "poster.pdf",
+            "pages": 1,
+            "format_status": "ok",
+            "content_file": "eurosys25posters-final183.pdf"
+        },
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1738843043,
+        "final_submitted": true,
+        "final_submitted_at": 1741363507,
+        "modified_at": 1741364256,
+        "tags": [
+            {
+                "tag": "accept",
+                "value": 0
+            }
+        ]
+    }
+]
